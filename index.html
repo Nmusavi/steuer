@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="javascript:rechnen()" >
+        <label for="radiofirst">Ein Person</label>
+        <input id="radiofirst" type="radio" onclick="display()" name="person" required>
+
+
+        <label for="radiosecond">Zwei Person</label>
+        <input id="radiosecond" type="radio" onclick="display()" name="person"><br><br>
+
+
+        <label id="labePersonOne"  for="personOne">Person Eins </label><br>
+        <input type="text" id="personOne"  placeholder="Bruttoeinkommen"><br>
+
+
+        <label id="labelPersonTwo"  for="personTwo">Person Zwei </label><br>
+        <input type="text" id="personTwo"  placeholder="Bruttoeinkommen"><br><br>
+
+
+        <label for="radioYear2020">2020</label>
+        <input id="radioYear2020" type="radio" required name="year">
+        <label for="radioYear2019">2019</label>
+        <input id="radioYear2019" type="radio" required name="year">
+        <label for="radioYear2018">2018</label>
+        <input id="radioYear2018" type="radio" required name="year"><br><br>
+        <button type="submit">Rechnen</button><br><br>
+        <label for="result">Est:</label>
+        <h3 id="result"></h3>
+    </form>
+    <script src="js/steuer.js"></script>
+</body>
+</html>
