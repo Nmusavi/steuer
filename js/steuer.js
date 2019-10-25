@@ -113,7 +113,7 @@ function rechnen(){
         {
                 if(document.getElementById("personTwo").value>0)
                 {
-                    var zvE2 = (document.getElementById("personOne").value + document.getElementById("personTwo").value) / 2;
+                    var zvE2 = parseInt((document.getElementById("personOne").value) + parseInt(document.getElementById("personTwo").value)) / 2;
                     if(document.getElementById("radioYear2020").checked)
                     {
                         if(zvE2 <= 9408)
